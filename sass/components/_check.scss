@@ -1,0 +1,26 @@
+.check-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+    color: #757575;
+    @extend %justify-list ;
+}
+
+.check-text a {
+    color: #2196F3;
+}
+
+.check-text span {
+    width: 16px;
+    height: 15px;
+    border: 1px solid rgba(34, 34, 34, 0.2);
+    margin-right: 9px;
+    border-radius: 2px;
+    @extend %justify-list ;
+}
+  .check-icon {
+    fill: transparent;
+  }
