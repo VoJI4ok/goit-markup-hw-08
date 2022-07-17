@@ -1,4 +1,15 @@
-.work {padding-bottom: 94px;}
+.work {
+@include mobile {
+    display: none;
+}
+@include tablet {
+    display: none;
+}
+@include desktop{
+    padding-bottom: 94px;
+    display: block;
+}
+}
 .work-title{
     font-family: 'Roboto';
     font-style: normal;
