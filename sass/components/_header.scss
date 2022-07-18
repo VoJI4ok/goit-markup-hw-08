@@ -10,7 +10,9 @@
 }
 
 .header-container{
-    @extend %justify-list;
+    
+  @extend %justify-list;
+    
 }
 
 
@@ -33,18 +35,7 @@ font-family: 'Raleway';
     color: #212121;
 }
 
-.menu-desktop{
-    @include mobile {
-       display: none       
-    }
-@include tablet{
-display: block
-}
-@include desktop{
-display: block
-}
 
-}
 
 .menu{
     @extend %aligin-list;
@@ -116,15 +107,7 @@ opacity: 1;}
 }
 
 .connect{margin-left: auto;display: flex;
-    @include mobile {
-        display: none       
-     }
- @include tablet{
- display: block
- }
- @include desktop{
- display: block
- }
+    
  
 
 }

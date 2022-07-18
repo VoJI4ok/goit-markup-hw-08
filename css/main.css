@@ -225,22 +225,6 @@ body {
   color: #212121;
 }
 
-@media screen and (min-width: 480px) {
-  .menu-desktop {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-desktop {
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu-desktop {
-    display: block;
-  }
-}
-
 .menu__item-list {
   font-weight: 500;
   font-size: 14px;
@@ -311,21 +295,6 @@ body {
 .connect {
   margin-left: auto;
   display: flex;
-}
-@media screen and (min-width: 480px) {
-  .connect {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .connect {
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .connect {
-    display: block;
-  }
 }
 
 .connect__contacts-span {
