@@ -3,7 +3,7 @@
     border: 1px solid #ECECEC;
     padding-top: 24px;
     padding-bottom: 24px;
-    
+    display: flex;
 }
 .nav{
    @extend %aligin-list;
@@ -11,7 +11,7 @@
 
 .header-container{
     
-  @extend %justify-list;
+    display: flex;
     
 }
 
@@ -39,7 +39,8 @@ font-family: 'Raleway';
 
 .menu{
     @extend %aligin-list;
-
+    @media screen and (max-width: 768px) {
+        display: none;}
 }
 .menu__item-list {
 font-weight: 500;
@@ -104,12 +105,24 @@ opacity: 1;}
     @extend %aligin-list;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus{color: #2196F3;}
+    @include tablet {
+        margin-left: 84px;
+        &:not(:first-child){
+            margin-top: 10px;
+        }
+    }
+    @include desktop{
+        margin-left: 30px;
+        &:not(:first-child){margin-top: 0px;
+        }
+    }
+}
+.connect{
+    @media screen and (max-width: 768px) {
+    display: none;}
+margin-left: auto;display: flex;
+flex-wrap: wrap;
 }
 
-.connect{margin-left: auto;display: flex;
-    
- 
-
-}
 .connect__contacts-span{margin-left: 10px;}
 .connect__contacts-icon{fill:currentColor;}
