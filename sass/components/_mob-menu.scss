@@ -8,6 +8,7 @@
     fill: #000000;
     background-color: transparent;
     
+    
 }
 
 .mob-menu{
@@ -22,11 +23,19 @@
     padding-left: 40px;
     padding-bottom: 48px;
     padding-right: 83px;
+ .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+
+ }
+
+
 
 }
 
-.mob-menu__icon {
-}
 
 .mob-menu-close__btn {
     display: block;
@@ -41,13 +50,10 @@
         fill: #2196F3;
     }
 }
-.mob-menu-list {
-}
+
 .mob-menu__item {
-    margin-bottom: 32px;
-    &:last-child{
-        margin-bottom: 302px;
-    }
+   &:not(:last-child){margin-bottom: 32px;} 
+   
 }
 .active{
     color: #2196F3;
@@ -69,7 +75,6 @@ color: #212121;
 }
 
 .mob-connect-item {
-    
     &:not(:last-child){
         margin-bottom: 32px;
     }
@@ -90,8 +95,7 @@ letter-spacing: 0.02em;
 color: #757575;
 
 }
-.mob-soc {
-}
+
 .mob-soc-list {
     margin-top: 64px;
     display: flex;

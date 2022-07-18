@@ -149,6 +149,7 @@ body {
 
 .button-list {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .btn-item {
   display: flex;
@@ -216,8 +217,28 @@ body {
   margin-right: 93px;
 }
 
+.header-span {
+  color: #212121;
+}
+
 .nav__logo__span {
   color: #212121;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-desktop {
+    display: block;
+  }
 }
 
 .menu__item-list {
@@ -291,6 +312,21 @@ body {
   margin-left: auto;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .connect {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .connect {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: block;
+  }
+}
 
 .connect__contacts-span {
   margin-left: 10px;
@@ -324,6 +360,13 @@ body {
   padding-bottom: 48px;
   padding-right: 83px;
 }
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
 
 .mob-menu-close__btn {
   display: block;
@@ -339,11 +382,8 @@ body {
   fill: #2196F3;
 }
 
-.mob-menu__item {
+.mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
-}
-.mob-menu__item:last-child {
-  margin-bottom: 302px;
 }
 
 .active {

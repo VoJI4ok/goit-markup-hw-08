@@ -25,8 +25,25 @@ font-family: 'Raleway';
     margin-right: 93px;
 }
 
+.header-span{
+    color: #212121;
+}
+
 .nav__logo__span{
     color: #212121;
+}
+
+.menu-desktop{
+    @include mobile {
+       display: none       
+    }
+@include tablet{
+display: block
+}
+@include desktop{
+display: block
+}
+
 }
 
 .menu{
@@ -98,6 +115,18 @@ opacity: 1;}
     &:hover, &:focus{color: #2196F3;}
 }
 
-.connect{margin-left: auto;display: flex;}
+.connect{margin-left: auto;display: flex;
+    @include mobile {
+        display: none       
+     }
+ @include tablet{
+ display: block
+ }
+ @include desktop{
+ display: block
+ }
+ 
+
+}
 .connect__contacts-span{margin-left: 10px;}
 .connect__contacts-icon{fill:currentColor;}
