@@ -1,6 +1,5 @@
 .clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
     @include mobile {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -9,18 +8,35 @@
       padding-top: 60px;
       padding-bottom: 60px;
   }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
     } 
     
     .clients-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    
     text-align: center;
-    letter-spacing: 0.03em;
+    
     color: #212121;
-    margin-bottom: 50px;
+    
+@include mobile {
+  font-size: 28px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+margin-bottom: 30px;
+}
+@include desktop {
+  margin-bottom: 50px;
+  font-size: 36px;
+    line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
     }
     
     .clients-list{

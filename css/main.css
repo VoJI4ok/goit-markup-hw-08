@@ -148,10 +148,25 @@ body {
   border-radius: 4px;
 }
 
-.button-list {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 480px) {
+  .button-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .button-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .btn-item {
   display: flex;
   margin-bottom: 40px;
@@ -203,9 +218,19 @@ body {
 .header {
   background-color: #ffffff;
   border: 1px solid #ECECEC;
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header-container {
@@ -552,10 +577,6 @@ body {
   }
 }
 
-.about {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
 @media screen and (min-width: 480px) {
   .about {
     padding-top: 60px;
@@ -566,6 +587,12 @@ body {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -714,12 +741,24 @@ body {
 .team-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .team-title {
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -802,10 +841,6 @@ body {
   fill: currentColor;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 @media screen and (min-width: 480px) {
   .clients {
     padding-top: 60px;
@@ -818,17 +853,35 @@ body {
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .clients-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .clients-title {
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .clients-list {
@@ -892,7 +945,7 @@ body {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc((100% - 30px) / 1);
+  width: calc((100% - 0px) / 1);
 }
 .pictures-item:hover, .pictures-item:focus {
   border: 1px solid #EEEEEE;
@@ -977,7 +1030,6 @@ body {
   .footer-container {
     width: 480px;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -985,13 +1037,13 @@ body {
     width: 768px;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
     width: 1200px;
     justify-content: flex-start;
-    flex-wrap: nowrap;
   }
 }
 
@@ -1056,7 +1108,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
 
@@ -1182,6 +1236,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .footer-link {
@@ -1219,8 +1278,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-form {
-    flex-direction: row;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1253,7 +1312,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-container-logo {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
 
@@ -1282,6 +1343,16 @@ body {
   border-radius: 5px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-title {
@@ -1313,6 +1384,14 @@ body {
 .modal-field-check {
   margin-bottom: 30px;
   margin-top: 20px;
+  min-width: 370px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .modal-input {
@@ -1424,6 +1503,20 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-text a {
