@@ -1387,7 +1387,6 @@ body {
 .modal-field-check {
   margin-bottom: 30px;
   margin-top: 20px;
-  min-width: 370px;
 }
 
 .modal-input {
@@ -1495,9 +1494,6 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 @media screen and (min-width: 480px) {
@@ -1523,6 +1519,7 @@ body {
 
 .check-text a {
   color: #2196F3;
+  margin-left: 4px;
 }
 
 .check-text span {
