@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.check-text span, .check-text, .clients-link, .team-soc-link, .modal-btn, .modal-close-btn, .footer-btn {
+.check-text span, .clients-link, .team-soc-link, .modal-btn, .modal-close-btn, .footer-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1394,13 +1394,6 @@ body {
   margin-bottom: 30px;
   margin-top: 20px;
   min-width: 370px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .modal-input {
@@ -1518,6 +1511,9 @@ body {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1525,6 +1521,9 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
