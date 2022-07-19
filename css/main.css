@@ -212,7 +212,16 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  margin-left: 125px;
+}
+@media screen and (min-width: 480px) {
+  .modal-btn {
+    margin-left: 85px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-btn {
+    margin-left: 125px;
+  }
 }
 
 .header {
